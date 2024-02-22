@@ -41,6 +41,7 @@ public class Main {
         numbers.setLayout(new GridLayout(4,3));
         numbers.setPreferredSize(new Dimension(200,250));
         numbers.setBackground(Color.BLACK);
+
         for(int i=9;i>=0;i--)
         {
             add_button(numbers,String.valueOf(i));
@@ -61,9 +62,9 @@ public class Main {
         JPanel screen=new JPanel();
         //screen.setLayout(new FlowLayout());
         screen.setPreferredSize(new Dimension(450,100));
-        screen.setBackground(Color.blue);
+        screen.setBackground(Color.green);
         display=new JTextField();
-        display.setBackground(Color.BLUE);
+        display.setBackground(Color.green);
         display.setPreferredSize(new Dimension(450,100));
         Font text=new Font("Ariel",Font.PLAIN,20);
         display.setFont(text);
@@ -83,6 +84,7 @@ public class Main {
         JButton button=new JButton(printable);
         Font buttonfont=new Font("Ariel",Font.PLAIN,20);
         button.setFont(buttonfont);
+        button.setBackground(Color.white);
         panel.add(button);
         button.addActionListener(new ActionListener() {
             @Override
